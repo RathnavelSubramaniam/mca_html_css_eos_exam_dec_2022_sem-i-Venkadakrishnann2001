@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="sthortcut icon" href="images/templeicon1.jpg">
+    <style>
+      body{
+        background-color: aqua;
+      }
+        .move{
+    margin-left: -14%;
+    
+}
+
+.slider {
+    width: 600px;
+    height: 300px;
+    background-color:gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: lightgreen;
+  }
+  .div1 p{
+   margin-right: 2%;
+  }
+  .par2{
+    margin-top: 40%;
+  }
+  .par2 p {
+ margin-left: 20%;
+ margin-top: -10%;
+  } 
+  .par2 img{
+    margin-left: 2%;
+  }
+  p{
+    float:right;
+  }
+  a{
+    border: 2px solid black;
+  
+  background-color: lightgray;
+  }
+  
+  
+    </style>
+</head>
+<body>
+  <a href="Rameshwaram Ramanathawaram Temple.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+  </svg></a>
+  <center>
+  <h3>slide</h3>
+</div>
+<div class="move">
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img src="./images/rameswaram-temple.png" class="slide" width="500" height="300" />
+          <img src="./images/temple1.jpg" class="slide" width="500" height="300" />
+          <img src="./images/templeth2.jpg" class="slide" width="500" height="300" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+</div>
+</center>
+<p><b>
+
+  A slider is a set of frames in a sequence that can be traversed respectively. This article exhibits the approach to build a slideshow with the use of only HTML and CSS.
+  
+  At first, enter the basic HTML code and then add the radio buttons for the frames using type as radio. After that, implement the designs of frames in a sequence. With the help of margin-left, the frames can be adjusted and traversed using radio buttons as well as controls labels. In the frames, the image can also be included rather than text. By this, the browser consumes less memory and consumes less computational power.
+  
+  Given an HTML and CSS document to create a slider. 
+  
+  First Section: This section contains the HTML portion of the page. The slides that have to be shown are defined with their corresponding text.
+</b></p>
+
+<center>
+ <h3>videos</h3>
+<video width="520" height="440" controls>
+  <source src="video/video.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</center>
+
+<center>
+  <a href="./audio/shivji-rudrabhishek-shlok-mantra-3145.mp3">Temple audio</a><br><br>
+  <a href="./pdf/Temples.pdf">Temples pdf</a></center>
+
+</body>
+</html>
